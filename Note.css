@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    position: fixed;
+    z-index: -1;
+}
+
+.bg img{
+    opacity: 0.5;
+    filter: brightness(50%);
+}
+
+section{
+    position: relative;
+    z-index: 1;
+}
+
+.Note{
+    font-family: "Lobster", sans-serif;
+    font-weight: 5500;
+    font-style: normal;
+    font-size: 50px;
+    padding: 40px;
+    margin-left: 20px;
+}
+
+.bulb{
+    border: 5px solid black;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: purple;
+}
+
+.gap{
+    height: 5px;
+    background-color: rgb(33, 32, 32);
+}
+
+.plus{
+    display: inline-block;
+    position: fixed;
+    font-family: Arial, sans-serif; 
+    font-size: 60px;
+    border: 4px solid black;
+    padding: 1px 16px 1px 16px;
+    border-radius: 50%;
+    color: rgb(234, 255, 0);
+    background-color: navy;
+    font-weight: 400;
+    margin-top: 29%;
+    left: 93%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.second{
+    margin-top: -29%;
+}
+
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 20px 5px 40%;
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+}
+
+.boxes{
+    background-image: url("assets/note.webp");
+    height: 230px;
+    width: 350px;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2%;
+}
+
+textarea{
+    margin-left: 10%;
+    background: transparent;
+    border: 2px solid;
+    width: 250px;
+    height: 90px;
+    resize: none; 
+    overflow: auto;
+}
+
+.save{
+    border: 2px solid black;
+    background-color: rgb(68, 68, 244);
+    color: white;
+    border-radius: 5px;
+    margin-left: 3%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.save:hover{
+    background-color: rgb(147, 147, 245);
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    margin: 6%;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .plus{
+        left: 92%;
+    }
+}
+@media (max-width: 992px) {
+    .plus{
+        left: 88%;
+    }
+}
+@media (max-width: 768px) {
+    .plus{
+        left: 83%;
+    }
+}
+@media (max-width: 576px) {
+    .plus{
+        left: 76%;
+        font-size: 45px;
+    }
+    .boxes{
+        height: 200px;
+        width: 300px;
+    }
+    .save{
+        margin-top: -7%;
+    }
+    .material-symbols-outlined {
+        margin-top: 3%;
+    }
+}
+@media (max-width: 325px) {
+    .plus{
+        left: 77%;
+        bottom: 2%;
+    }
+    .Note{
+        font-size: 40px;
+    }
+    .gap{
+        width: 110%;
+    }
+    .boxes{
+        height: 190px;
+        width: 290px;
+    }
+    textarea{
+        width: 240px;
+        height: 85px;
+    }
+}
