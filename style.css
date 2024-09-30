@@ -150,7 +150,7 @@ textarea{
         margin-top: 3%;
     }
 }
-@media (max-width: 325px) {
+@media (max-width: 336px) {
     .plus{
         left: 77%;
         bottom: 2%;
