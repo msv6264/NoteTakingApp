@@ -91,7 +91,7 @@ textarea{
     width: 250px;
     height: 90px;
     resize: none; 
-    overflow: auto;
+    overflow: none;
 }
 
 .save{
@@ -152,8 +152,10 @@ textarea{
 }
 @media (max-width: 336px) {
     .plus{
-        left: 77%;
-        bottom: 2%;
+        left:83%;
+        bottom: 1%;
+        font-size: 40px;
+        padding: 0.5px 11px 0.5px 11px;
     }
     .Note{
         font-size: 40px;
@@ -162,11 +164,19 @@ textarea{
         width: 110%;
     }
     .boxes{
-        height: 190px;
-        width: 290px;
+        height: 185px;
+        width: 285px;
     }
     textarea{
-        width: 240px;
+        margin-top: -5%;
+        width: 230px;
         height: 85px;
+    }
+}
+@media (max-width: 269px) {
+    .plus{
+        left: 77%;
+        bottom: 2%;
+        position: relative;
     }
 }
